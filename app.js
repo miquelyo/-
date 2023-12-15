@@ -23,3 +23,50 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+	const fadeElements = document.querySelectorAll('.fade-in');
+
+	function fadeIn() {
+		fadeElements.forEach(element => {
+			const elementTop = element.getBoundingClientRect().top;
+			const elementBottom = element.getBoundingClientRect().bottom;
+
+			if (elementTop < window.innerHeight * 0.9 && elementBottom >= 0) {
+				element.classList.add('visible');
+			} else {
+				element.classList.remove('visible');
+			}
+		});
+	}
+
+	// Panggil fungsi fadeIn dengan delay 2 detik setelah halaman dimuat
+	setTimeout(function () {
+		fadeIn();
+	}, 2000);
+
+	// Panggil fungsi fadeIn saat di-scroll
+	window.addEventListener('scroll', fadeIn);
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+	const audio = document.getElementById("audio");
+	const audioControl = document.getElementById("audio-control");
+
+	function toggleAudio() {
+		if (audio.paused) {
+			audio.play();
+		} else {
+			audio.pause();
+		}
+	}
+
+	audioControl.addEventListener("click", toggleAudio);
+});
+
+
+
+
+
+
