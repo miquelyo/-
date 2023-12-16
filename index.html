@@ -9,16 +9,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <title>Miquel Yosafat</title>
 </head>
-
+<div class="loading-screen">
+  <img src="./img/logo-loading.png" alt="Logo" class="loading-logo">
+</div>
 <body>
+<div class="main-content" style="display: none;">
   <!-- Header -->
-  <section id="header">
+  <section id="header" style="opacity: 0;">
     <div class="header container">
       <div class="nav-bar">
         <div class="brand">
           <a href="#hero">
             <h1>Miquel Yosafat</h1>
-<!--            <img src="./img/logo-m.png" alt="Logo Baru">-->
           </a>
         </div>
         <div class="nav-list">
@@ -27,8 +29,8 @@
           </div>
           <ul>
             <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Experience">Projects</a></li>
+            <li><a href="#skills" data-after="Service">Skills</a></li>
+            <li><a href="#experience" data-after="Experience">Experience</a></li>
             <li><a href="#about" data-after="About">About Me</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
           </ul>
@@ -46,75 +48,132 @@
         <h1>Hello <span></span></h1>
         <h1>I'm Miquel Yosafat<span></span></h1>
         <h1>QA Engineer <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
+        <p></p>
+        <p></p>
+        <div>
+          <a href="https://open.spotify.com/playlist/7orMC9qu8n1X6Ke9kYQOHz">
+            <i class="fa-brands fa-spotify" style="color: white; font-size: 50px; margin-right: 20px"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-linkedin-in" style="color: white; font-size: 50px; margin-right: 20px"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-github" style="color: white; font-size: 50px; margin-right: 20px"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-instagram" style="color: white; font-size: 50px; margin-right: 20px"></i>
+          </a>
+        </div>
       </div>
-      <div class="image-container">
-        <img src="./img/MIQUEL-YOSAFAT.JPG" alt="Your Alt Text" class="rounded-image">
-      </div>
+
     </div>
   </section>
+
   <!-- End Hero Section  -->
 
   <!-- Service Section -->
-  <section id="services">
-    <div class="services container fade-in">
-      <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas
-          magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias
-          voluptatum explicabo!</p>
+  <section id="skills">
+    <div class="skills container fade-in">
+      <div class="skills-top">
+        <h1 class="section-title underline-text">Skills</h1>
       </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
+      <div class="skills-bottom">
+        <div class="row">
+        <div class="card">
+          <div class="card-title">
+            <h2>Front-End Developer</h2>
+          </div>
+          <hr class="divider">
+          <div class="card-icons">
+            <img src="./img/JavaScript-logo.png" alt="JavaScript Icon">
+            <img src="./img/png-transparent-aperture-laboratories-science-technology-laboratory-portal-science-blue-text-computer-thumbnail-removebg-preview.png" alt="Icon 1">
+            <img src="./img/images-removebg-preview.png" alt="Icon 2">
+            <img src="./img/download%20(1).png" alt="Icon 3">
+            <img src="./img/png-transparent-flutter-hd-logo-thumbnail-removebg-preview.png" alt="Icon 4">
+            <img src="./img/bootstrap-logo.png" alt="Bootstrap Icon">
+          </div>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-title">
+            <h2>Back-End Developer</h2>
+          </div>
+          <hr class="divider">
+          <div class="card-icons">
+            <img src="./img/JavaScript-logo.png" alt="JavaScript Icon">
+            <img src="./img/png-transparent-aperture-laboratories-science-technology-laboratory-portal-science-blue-text-computer-thumbnail-removebg-preview.png" alt="Icon 1">
+            <img src="./img/images-removebg-preview.png" alt="Icon 2">
+            <img src="./img/download%20(1).png" alt="Icon 3">
+            <img src="./img/png-transparent-flutter-hd-logo-thumbnail-removebg-preview.png" alt="Icon 4">
+            <img src="./img/bootstrap-logo.png" alt="Bootstrap Icon">
+          </div>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-title">
+            <h2>Multimedia</h2>
+          </div>
+          <hr class="divider">
+          <div class="card-icons">
+            <img src="./img/JavaScript-logo.png" alt="JavaScript Icon">
+            <img src="./img/png-transparent-aperture-laboratories-science-technology-laboratory-portal-science-blue-text-computer-thumbnail-removebg-preview.png" alt="Icon 1">
+            <img src="./img/images-removebg-preview.png" alt="Icon 2">
+            <img src="./img/download%20(1).png" alt="Icon 3">
+            <img src="./img/png-transparent-flutter-hd-logo-thumbnail-removebg-preview.png" alt="Icon 4">
+            <img src="./img/bootstrap-logo.png" alt="Bootstrap Icon">
+          </div>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-title">
+            <h2>Office</h2>
+          </div>
+          <hr class="divider">
+          <div class="card-icons">
+            <img src="./img/JavaScript-logo.png" alt="JavaScript Icon">
+            <img src="./img/png-transparent-aperture-laboratories-science-technology-laboratory-portal-science-blue-text-computer-thumbnail-removebg-preview.png" alt="Icon 1">
+            <img src="./img/images-removebg-preview.png" alt="Icon 2">
+            <img src="./img/download%20(1).png" alt="Icon 3">
+            <img src="./img/png-transparent-flutter-hd-logo-thumbnail-removebg-preview.png" alt="Icon 4">
+            <img src="./img/bootstrap-logo.png" alt="Bootstrap Icon">
+          </div>
         </div>
+      </div>
       </div>
     </div>
   </section>
+
+
+
+
+
+
   <!-- End Service Section -->
 
   <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container fade-in">
-      <div class="projects-header">
-        <h1 class="section-title">Work <span>Experience</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 1</h1>
-            <h2>Coding is Love</h2>
-            <p>Pengalaman Magang di Travelxism</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-      </div>
-    </div>
+  <section id="experience">
+<!--    <div class="experience container fade-in">-->
+<!--      <div class="projects-header">-->
+<!--        <h1 class="section-title">Work <span>Experience</span></h1>-->
+<!--      </div>-->
+<!--      <div class="all-projects">-->
+<!--        <div class="project-item">-->
+<!--          <div class="project-info">-->
+<!--            <h1>Project 1</h1>-->
+<!--            <h2>Coding is Love</h2>-->
+<!--            <p>Pengalaman Magang di Travelxism</p>-->
+<!--          </div>-->
+<!--          <div class="project-img">-->
+<!--            <img src="./img/img-1.png" alt="img">-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
   </section>
   <!-- End Projects Section -->
+
+
+
 
   <!-- About Section -->
   <section id="about">
@@ -175,12 +234,13 @@
       <p>Copyright © 2023 Miquel Yosafat. All rights reserved</p>
     </div>
   </section>
+  </div>
   <!-- End Footer -->
 
   <!-- Audio Player dan Tombol Kontrol -->
   <div id="audio-container">
     <audio id="audio" loop>
-      <source src="img/backsound.mp3" type="audio/mp3">
+      <source src="./img/backsound.mp3" type="audio/mp3" >
       Your browser does not support the audio element.
     </audio>
     <!-- Ganti 'fa-music' dengan kelas Font Awesome yang sesuai -->
@@ -188,7 +248,14 @@
   </div>
 
 
-  <script src="./app.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Setelah halaman dimuat, tampilkan elemen dengan class "main-content"
+      document.querySelector('.main-content').style.display = 'block';
+    });
+  </script>
+
 </body>
 
 </html>
