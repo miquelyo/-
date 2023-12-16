@@ -1,18 +1,25 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+p {
+	margin-bottom: 200px;
+}
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
+
 html {
 	font-size: 8px;
-	font-family: 'Roboto Light', sans-serif;
+	font-family: 'League Spartan', sans-serif;
 	font-weight: bold;
 	scroll-behavior: smooth;
 }
+
 a {
 	text-decoration: none;
 }
+
 .container {
 	min-height: 100vh;
 	width: 100%;
@@ -20,11 +27,13 @@ a {
 	align-items: center;
 	justify-content: center;
 }
+
 img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 }
+
 p {
 	color: black;
 	font-size: 1.4rem;
@@ -38,7 +47,6 @@ p {
 	font-weight: 300;
 	color: black;
 	margin-bottom: 10px;
-	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	text-align: center;
 }
@@ -53,7 +61,6 @@ p {
 	background-color: transparent;
 	border: 2px solid #0090ff;
 	font-size: 2rem;
-	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	margin-top: 30px;
 	transition: 0.3s ease;
@@ -65,7 +72,6 @@ p {
 }
 .brand h1 {
 	font-size: 3rem;
-	text-transform: uppercase;
 	color: white;
 }
 .brand h1 span {
@@ -83,7 +89,6 @@ p {
 }
 #header .header {
 	min-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.24);
 	transition: 0.3s ease background-color;
 }
 #header .nav-bar {
@@ -120,7 +125,7 @@ p {
 	letter-spacing: 0.2rem;
 	text-decoration: none;
 	color: white;
-	text-transform: uppercase;
+
 	padding: 20px;
 	display: block;
 }
@@ -201,7 +206,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/bg.jpg);
+	background-image: url(./img/bg-test.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -243,6 +248,8 @@ p {
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
+
+/*animasi */
 #hero h1 span {
 	position: absolute;
 	top: 0;
@@ -265,26 +272,25 @@ p {
 
 /* End Hero Section */
 
-/* Services Section */
-#services .services {
+/* SKills Section */
+#skills .skills {
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
-	padding: 100px 0;
+	padding: 20px 0;
 }
-#services .service-top {
+#skills .skills-top {
 	max-width: 500px;
 	margin: 0 auto;
 }
-#services .service-bottom {
+#skills .skills-bottom {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 50px;
 }
-#services .service-item {
+#skills .skills-item {
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
@@ -299,7 +305,7 @@ p {
 	z-index: 1;
 	overflow: hidden;
 }
-#services .service-item::after {
+#skills .skills-item::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -310,22 +316,21 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
-#services .service-bottom .icon {
+#skills .skills-bottom .icon {
 	height: 80px;
 	width: 80px;
 	margin-bottom: 20px;
 }
-#services .service-item h2 {
+#skills .skills-item h2 {
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 10px;
-	text-transform: uppercase;
 }
-#services .service-item p {
+#skills .skills-item p {
 	color: white;
 	text-align: left;
 }
-/* End Services Section */
+/* End SKills Section */
 
 /* Projects section */
 #projects .projects {
@@ -558,7 +563,7 @@ p {
 		padding: 20px 60px;
 	}
 	h1.section-title {
-		font-size: 6rem;
+		font-size: 3rem;
 	}
 
 	/* Hero */
@@ -567,30 +572,30 @@ p {
 	}
 	/* End Hero */
 
-	/* Services Section */
-	#services .service-bottom .service-item {
+	/* Skills Section */
+	#skills .skills-bottom .skills-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	/* End Services Section */
+	/* End Skills Section */
 
 	/* Project */
-	#projects .project-item {
+	#experience .experience-item {
 		flex-direction: row;
 	}
-	#projects .project-item:nth-child(even) {
+	#experience .experience-item:nth-child(even) {
 		flex-direction: row-reverse;
 	}
-	#projects .project-item {
+	#experience .experience-item {
 		height: 400px;
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
 	}
-	#projects .all-projects .project-info {
+	#experience .all-experience .experience-info {
 		height: 100%;
 	}
-	#projects .all-projects .project-img {
+	#experience .all-experience .experience-img {
 		height: 100%;
 	}
 	/* End Project */
@@ -680,7 +685,7 @@ p {
 	}
 	/* End header */
 
-	#services .service-bottom .service-item {
+	#skills .skills-bottom .skills-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
@@ -732,4 +737,119 @@ p {
 		transform: rotate(45deg); /* Rotasi 90 derajat */
 	}
 }
+
+
+/* Gaya untuk Loading Screen */
+.loading-screen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #212529;
+	z-index: 9999;
+}
+
+.loading-logo {
+	width: 100px; /* Sesuaikan dengan ukuran logo Anda */
+	height: auto;
+	opacity: 0; /* Sembunyikan logo secara awal */
+	animation: fadeIn 2s forwards; /* Animasi fade-in selama 2 detik */
+}
+
+/* Gaya untuk Konten Utama */
+.main-content {
+	display: none; /* Sembunyikan konten utama secara awal */
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
 /* End  Media Query For Desktop */
+
+.underline-text {
+	text-decoration: underline;
+	text-decoration-color: #0090ff;
+
+}
+
+#skills {
+	background-color: #f1f1f1;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.skills .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	text-align: center;
+	width: 48%/* Setengah dari lebar container dengan padding 20px di antara */
+	max-width: 300px; /* Sesuaikan dengan kebutuhan */
+	box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar card */
+	height: 300px; /* Sesuaikan tinggi card sesuai kebutuhan */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 20px; /* Tambahkan margin bawah agar ada jarak antar card */
+}
+
+.card-title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.divider {
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+	margin: 10px 0;
+}
+
+.card-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1; /* Biarkan ikon memanjang ke samping */
+}
+
+.card-icons img {
+	margin: 5px;
+	width: 40px;
+	height: 40px;
+}
+
+.skills-bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+
+h2 {
+	font-size: 15px;
+}
+
