@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Panggil fungsi fadeIn dengan delay 2 detik setelah halaman dimuat
 	setTimeout(function () {
 		fadeIn();
-	}, 2000);
+	}, 1000);
 
 	// Panggil fungsi fadeIn saat di-scroll
 	window.addEventListener('scroll', fadeIn);
@@ -64,6 +64,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	audioControl.addEventListener("click", toggleAudio);
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+	// Simulasikan waktu pemuatan selama 5 detik
+	setTimeout(function () {
+		// Menampilkan konten utama
+		const mainContent = document.querySelector('.main-content');
+		mainContent.style.display = 'block';
+
+		// Fade in navbar dan footer
+		fadeIn('header');
+		fadeIn('footer');
+
+		// Menyembunyikan loading screen
+		document.querySelector('.loading-screen').style.display = 'none';
+	}, 3000);
+});
+
+function fadeIn(elementId) {
+	const element = document.getElementById(elementId);
+	element.style.opacity = 1;
+}
 
 
 
